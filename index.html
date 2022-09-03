@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carrito de jugadores</title>
+
+    <style>
+    html, body {
+        margin: 0;
+        padding: 0;
+    }  
+    body {
+        width: 100%;
+        height: 100%;
+        font-family: 'Times New Roman', Times, serif;
+        letter-spacing: 0.03em;
+        line-height: 1.6;
+    }  
+    .card__img{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    .jug {
+        margin: 50px 0px !important;
+        width: 100%;
+        max-width: 1300px;
+        display:  flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+    }
+    .jug .card {
+        width: 300px;
+        height: 430px;
+        border-radius: 8px;
+        box-shadow: 0 2px 2 rgba(0, 0, 0, 0.2);
+        padding: 0 10px;
+        overflow: hidden;
+        text-align: center;
+        transition: all 0.25;
+    }
+    .jug .card:hover {
+        transform: translateY(-15px);
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    }
+    .jug .card img{
+        width: 300px;
+        height: 220px;
+    }
+    .jug .card span {
+        padding: 0 1.5rem;
+    }
+    p.value {
+        margin-top: 1.5rem;
+    }
+    .jug .card .button {
+        font-weight: 500;
+        text-decoration: none;
+        color: 3498db;
+        background: fixed;
+        background-color: #A9EBEE
+    }
+    </style>
+</head>
+<body>
+    <div id="jug" class="jug"></div>
+
+    
+
+    <script src="./index.js"></script>
+    <!-- <script>
+        jugadores.forEach(function(jugador){
+            return '<p>'+ document.write(jugador.name) +'<p>'; 
+        })
+    </script> -->
+</body>
+</html>
