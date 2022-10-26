@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>carrito de jugadores</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
 
-    <style>
+    <!-- <style>
     html, body {
         margin: 0;
         padding: 0;
@@ -64,14 +67,280 @@
         background: fixed;
         background-color: #A9EBEE
     }
-    </style>
+    </style> -->
 </head>
 <body>
-    <div id="jug" class="jug"></div>
+    <!-- <div id="jug" class="jug"></div> -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                    <img src="logo/logo-futbol.png" class="logo-fut" alt="logo">
+                </div>
+                <div class="two columns u-pull-right">
+                    <ul>
+                        <li class="submenu">
+                            <img src="logo/logo-lista.png" class="logo-lista" alt="img-carrito">
+                            <div id="carrito">
+                                <table id="lista-carrito" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th>cantidad</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+
+                                
+                                <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="six columns">
+                    <div class="contenido-hero">
+                        <h2>The best players</h2>
+                        <form action="#" id="busqueda" method="post" class="formulario">
+                            <input class="u-full-width" type="text" placeholder="Which player do you want?" id="buscador">
+                            <input type="submit" id="submit-buscador" class="submit-buscador">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="lista-cursos" class="container">
+        <h1 id="encabezado" class="encabezado">Available players</h1>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/Haaland.jpg" alt="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Erling Haaland</h4>
+                        <p>Age: 22</p>
+                        <p>Position: DEL</p>
+                        <p class="precio" >85.000.000$</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Add</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/Nkunku.jpg" alt="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Christopher Nkunku</h4>
+                        <p>Age: 24</p>
+                        <p>Position: DEL</p>
+                        <p class="precio" >55.000.000$</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Add</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/Mbappe.jpg" alt="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Kylian Mbappe</h4>
+                        <p>Age: 22</p>
+                        <p>Position: DEL</p>
+                        <p class="precio" >85.000.000$</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Add</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="four columns">
+                <div class="card">
+                    <img src="img/Vlahovic.jpg" alt="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Dusan Vlahovic</h4>
+                        <p>Age: 22</p>
+                        <p>Position: DEL</p>
+                        <p class="precio" >60.000.000</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Add</a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <!-- .row -->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/Foden.jpg" alt="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Phil Foden</h4>
+                        <p>Age: 22</p>
+                        <p>Position: MED</p>
+                        <p class="precio" >70.000.000$</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Add</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/Pedri.jpg" alt="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Pedri</h4>
+                        <p>Age: 19</p>
+                        <p>Position: MED</p>
+                        <p class="precio" >80.000.000$</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Add</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/Mount.jpg" alt="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Mason Mount</h4>
+                        <p>Age: 23</p>
+                        <p>Position: MED</p>
+                        <p class="precio" >65.000.000$</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Add</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="four columns">
+                <div class="card">
+                    <img src="img/Elliot.jpg" alt="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Harvey Elliot</h4>
+                        <p>Age: 19</p>
+                        <p>Position: MED</p>
+                        <p class="precio" >50.000.000</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Add</a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <!-- .row -->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/Kounde.jpg" alt="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Joules Kounde</h4>
+                        <p>Age: 23</p>
+                        <p>Position: DEF</p>
+                        <p class="precio" >60.000.000$</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Add</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/DeLigt.jpg" alt="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Matthijs de Ligt</h4>
+                        <p>Age: 22</p>
+                        <p>Position: DEF</p>
+                        <p class="precio" >55.000.000$</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Add</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/Araujo.jpg" alt="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Ronald Araujo</h4>
+                        <p>Age: 23</p>
+                        <p>Position: DEF</p>
+                        <p class="precio" >60.000.000$</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Add</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="four columns">
+                <div class="card">
+                    <img src="img/Konate.jpg" alt="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Ibrahima Konate</h4>
+                        <p>Age: 23</p>
+                        <p>Position: DEF</p>
+                        <p class="precio" >60.000.000</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Add</a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <!-- .row -->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/Allison.jpg" alt="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Allison Becker</h4>
+                        <p>Age: 29</p>
+                        <p>Position: POR</p>
+                        <p class="precio" >50.000.000$</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Add</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/Ederson.jpg" alt="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Ederson</h4>
+                        <p>Age: 28</p>
+                        <p>Position: POR</p>
+                        <p class="precio" >40.000.000$</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Add</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/dibu.jpg" alt="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Emiliano Martinez</h4>
+                        <p>Age: 29</p>
+                        <p>Position: POR</p>
+                        <p class="precio" >45.000.000$</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Add</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="four columns">
+                <div class="card">
+                    <img src="img/Mendy.jpg" alt="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Mendy</h4>
+                        <p>Age: 30</p>
+                        <p>Position: DEF</p>
+                        <p class="precio" >45.000.000</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="16">Add</a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <!-- .row -->
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="four columns"></div>
+                <div class="four columns"></div>
+            </div>
+        </div>
+    </footer>
 
     
 
-    <script src="./index.js"></script>
+    <script src="./app.js"></script>
+    
+    <!-- <script src="./index.js"></script> -->
     <!-- <script>
         jugadores.forEach(function(jugador){
             return '<p>'+ document.write(jugador.name) +'<p>'; 
